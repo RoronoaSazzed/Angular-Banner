@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular Text Banner</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: customFont;
+      }
+
+      @font-face {
+        font-family: customFont;
+        src: url(font/YangoHeadline-Black.otf);
+      }
+
+      .wrapper {
+        overflow: hidden;
+      }
+
+      .parent {
+        width: 1950px;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        transform-style: preserve-3d;
+        perspective-origin: left center;
+        perspective: 1500px;
+        overflow: hidden;
+      }
+
+      .child {
+        display: flex;
+        align-items: stretch;
+        flex-wrap: nowrap;
+        justify-content: center;
+        transform: rotateY(30deg);
+      }
+
+      .div1,
+      .div2,
+      .div3,
+      .div4,
+      .div5 {
+        width: 650px;
+      }
+
+      .div1 {
+        font-size: 100px;
+        animation: in1 10s linear infinite;
+      }
+
+      @keyframes in1 {
+        0% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+
+        25% {
+          opacity: 1;
+          transform: translateX(-160%);
+        }
+
+        26%,
+        39% {
+          opacity: 0;
+        }
+
+        40% {
+          opacity: 1;
+          transform: translateX(300%);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(200%);
+        }
+
+        80% {
+          opacity: 1;
+          transform: translateX(100%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+
+      .div2 {
+        font-size: 100px;
+        animation: in2 10s linear infinite;
+      }
+
+      @keyframes in2 {
+        0% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+
+        20% {
+          opacity: 1;
+          transform: translateX(-100%);
+        }
+
+        45% {
+          opacity: 1;
+          transform: translateX(-260%);
+        }
+
+        46%,
+        59% {
+          opacity: 0;
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(200%);
+        }
+
+        80% {
+          opacity: 1;
+          transform: translateX(100%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+
+      .div3 {
+        font-size: 100px;
+        animation: in3 10s linear infinite;
+      }
+
+      @keyframes in3 {
+        0% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+
+        20% {
+          opacity: 1;
+          transform: translateX(-100%);
+        }
+
+        40% {
+          opacity: 1;
+          transform: translateX(-200%);
+        }
+
+        65% {
+          opacity: 1;
+          transform: translateX(-360%);
+        }
+
+        66%,
+        79% {
+          opacity: 0;
+        }
+
+        80% {
+          opacity: 1;
+          transform: translateX(100%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+
+      .div4 {
+        font-size: 100px;
+        animation: in4 10s linear infinite;
+      }
+
+      @keyframes in4 {
+        0% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+
+        20% {
+          opacity: 1;
+          transform: translateX(-100%);
+        }
+
+        40% {
+          opacity: 1;
+          transform: translateX(-200%);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-300%);
+        }
+
+        85% {
+          opacity: 1;
+          transform: translateX(-460%);
+        }
+
+        86%,
+        99% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0%);
+        }
+      }
+
+      .div5 {
+        font-size: 100px;
+        animation: in5 10s linear infinite;
+      }
+
+      @keyframes in5 {
+        0% {
+          opacity: 1;
+          transform: translateX(-560%);
+        }
+
+        1%,
+        19% {
+          opacity: 0;
+        }
+
+        20% {
+          opacity: 1;
+          transform: translateX(-100%);
+        }
+
+        40% {
+          opacity: 1;
+          transform: translateX(-200%);
+        }
+
+        60% {
+          opacity: 1;
+          transform: translateX(-300%);
+        }
+
+        80% {
+          opacity: 1;
+          transform: translateX(-400%);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(-560%);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="parent">
+        <div class="child">
+          <div class="div1">move your way</div>
+          <div class="div2">move your way</div>
+          <div class="div3">move your way</div>
+          <div class="div4">move your way</div>
+          <div class="div5">move your way</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
